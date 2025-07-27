@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="w-[100vw] h-[100vh] overflow:hidden flex justify-center items-center bg-yellow-300 font-bold ">
+        <div class="flex flex-col justify-center gap-6">
+            <div class="text-red-900 font-large">
+            Increment And Decrement
+           </div>
+           <div class="flex flex-row justify-between items-center bg-white w-full py-1 rounded-md">
+            <!-- substraction button -->
+            <button onclick="decrement()"  class="border-r-2 border-[#bfbfbf] ml-2 px-4">
+                <i class="fas fa-minus"></i>
+            </button>
+            <div class="font-bold" id="count">0</div>
+            <!-- addition button -->
+            <button onclick="increment()"  class="border-l-2 border-[#bfbfbf] mr-2 px-4">
+                <i class="fas fa-plus"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
