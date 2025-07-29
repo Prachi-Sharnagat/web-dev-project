@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+
+.container {
+  width: 550px;
+  height: 550px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  background: linear-gradient(to right, #f8dadf, #d4d5f5, #9ed6f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  background: linear-gradient(to right, #f27388, #6c6ef3, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: monospace;
+  text-align: center;
+  background-size: 200% 100%;
+  background-position: left;
+  cursor: pointer;
+}
+
+h1:hover {
+  background-position: right;
+  transform: scale(1.05);
+}
+
+.display-password {
+  width: 370px;
+  height: 66px;
+  border-radius: 12px;
+  border: none;
+  border-bottom: 7px solid rgb(246, 38, 38);
+  text-align: start;
+  font-size: 24px;
+  padding-left: 10px;
+  position: relative;
+  bottom: 35px;
+}
+
+input::placeholder {
+  color: rgb(244, 60, 91);
+  padding-left: 0.5rem;
+  font-weight: bold;
+  font-size: larger;
+
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 1, 1, 0.5);
+}
+
+.copy-image {
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+.checks {
+  display: block;
+  position: relative;
+  top: 50px;
+}
+
+
+.input-container {
+  font-size: xx-large;
+  position: relative;
+  bottom: 100px;
+  /* background: rgba(255, 0, 0, 0.1); */
+
+}
+
+.length-container {
+  display: flex;
+  position: relative;
+  top: 20px;
+  padding-right: 40px;
+  font-family: monospace;
+
+}
+
+.change-number {
+  padding-left: 130px;
+}
+
+.copy-container {
+  position: relative;
+  bottom: 25px;
+  right: 55px;
+  background: transparent;
+  border: transparent;
+}
+
+.copy-image {
+  cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  top: 25px;
+  width: 92%;
+  cursor: pointer;
+   z-index: 2;
+}
+
+.slider:focus{
+ outline: none;
+  box-shadow: 0 0 5px transparent; 
+}
+
+.check-points {
+  position: relative;
+  bottom: 15px;
+}
+
+.Strength-container {
+  position: relative;
+  top: 68px;
+  font-family: monospace;
+  display: flex;
+  gap: 250px;
+  font-size: x-large;
+
+}
+
+
+.generate-button {
+  position: relative;
+  top: 80px;
+  width: 370px;
+  height: 55px;
+  cursor: pointer;
+  background-color: rgb(236, 51, 51);
+  border: none;
+  border-radius: 12px;
+  border-bottom: 7px solid rgb(255, 255, 255);
+  font-size: 24px;
+  text-align: start;
+  padding-left: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.indicator {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(255, 255, 255);
+  transition: transform 0.3 ease-in-out;
+}
+
+.generate-button:hover {
+  transform: scale(1.02);
+}

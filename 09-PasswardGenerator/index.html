@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+            <!-- here data-passwprdDisplay is custom attribute always starts with data- -->
+            <input readonly placeholder="PASSWORD" class="display-password" data-passwordDisplay>
+            <button class="copy-container">
+                <span data-copying></span>
+                <img src="image/copy.svg" alt="copy-image" width="25px" height="25px" class="copy-image">
+
+            </button>
+        </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <div>Password length</div>
+                <div data-length class="change-number">10</div>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" data-length-slider>
+
+            <div class="check-points">
+                <div class="checks">
+                <input type="checkbox">
+                <label for="uppercase">include uppercase letters</label>
+            </div>
+
+            <div class="checks">
+                <input type="checkbox">
+                <label for="lowercase">include lowercase letters</label>
+            </div>
+
+            <div class="checks">
+                <input type="checkbox">
+                <label for="numbers">include numbers</label>
+            </div>
+
+            <div class="checks">
+                <input type="checkbox">
+                <label for="symbols">include symbols</label>
+            </div>
+
+            <div class="Strength-container">
+                <div>Strength</div>
+                <div data-indicator class="indicator"></div>
+            </div>
+            </div>
+            
+
+           <button data-generate-password class="generate-button">Generate Password</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
